@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grid System</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- conteúdo principal -->
+
+    <!-- my-5 é margin-y (cima e baixo) tamanho 5 -->
+    <div class="container my-5">
+
+        <!-- linha do grid, sem ela o grid n funciona -->
+        <div class="row">
+
+            <!-- 1a. coluna -->
+
+            <!-- classe col mostra que esta div é uma das colunas da grid -->
+            <!-- existem diversos cols, cada um para cada tamanho de tela. Ele prioriza o tamanho mais próximo ao tamanho da tela. Para mais detalhes veja na documentação do bootstrap, procure grid system -->
+            <!-- o número indica o tanto de colunas que ele ocupará, neste exemplo, telas pequenas ocuparão 12 colunas (todas) e a partir do tamanho de tela médio ele ocupará apenas 6 colunas (metade) -->
+            <div class="col-12 col-sm-12 col-md-6">
+
+                <img src="./images/developer-activity-animate.svg" alt="banner principal">
+
+            </div>
+            <!-- fim 1a. coluna -->
+
+            <!-- 2a. coluna -->
+
+            <!-- d-flex é display flex -->
+            <!-- flex-column torna o flex em modo column, ficando novamente um em cima do outro -->
+            <!-- align-items-center fará com que eles horizontalmente se centralizem -->
+            <!-- justify-content-center fará com que eles se centralize verticalmente -->
+
+            <div class="col-12 col-sm-12 col-md-6 d-flex
+            flex-column align-items-center justify-content-center">
+                <h2 class="display-2 text-purple">MyWeb</h2>
+
+                <!-- lead permite uma aparência próxima ao display, este que é exclusivo dos h1, h2, etc -->
+                <!-- text-center centraliza o texto -->
+                <p class="lead text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quaerat sunt cum consectetur,
+                    officia blanditiis reiciendis expedita incidunt ipsa quis?
+                </p>
+                <a href="" class="btn btn-outline-danger">Mais informações</a>
+            </div>
+            <!-- fim 2a. coluna -->
+
+        </div>
+        <!-- fim linha do grid -->
+
+        <h2 class="display-2 text-purple text-center my-4">Soluções</h2>
+        <div class="line"></div>
+
+        <!-- linha do grid -->
+        <div class="row">
+
+            <!-- 1a. coluna -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <!-- código que copiamos da documentação de Cards do bootstrap -->
+                <div class="card my-3">
+                    <img src="./images/cards/Content creation_Isometric.svg" class="card-img-top" alt="imagem base">
+                    <div class="card-body">
+                        <h5 class="card-title">UX / UI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-danger">Clique e conheça</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim 1a. coluna -->
+
+            <!-- 2a. coluna -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <!-- código que copiamos da documentação de Cards do bootstrap -->
+                <div class="card my-3">
+                    <img src="./images/cards/Content creation_Isometric.svg" class="card-img-top" alt="imagem base">
+                    <div class="card-body">
+                        <h5 class="card-title">UX / UI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-danger">Clique e conheça</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim 2a. coluna -->
+
+            <!-- 3a. coluna -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <!-- código que copiamos da documentação de Cards do bootstrap -->
+                <div class="card my-3">
+                    <img src="./images/cards/Content creation_Isometric.svg" class="card-img-top" alt="imagem base">
+                    <div class="card-body">
+                        <h5 class="card-title">UX / UI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-danger">Clique e conheça</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim 3a. coluna -->
+
+            <!-- 4a. coluna -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <!-- código que copiamos da documentação de Cards do bootstrap -->
+                <div class="card my-3">
+                    <img src="./images/cards/Content creation_Isometric.svg" class="card-img-top" alt="imagem base">
+                    <div class="card-body">
+                        <h5 class="card-title">UX / UI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-danger">Clique e conheça</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim 4a. coluna -->
+
+            <!-- 5a. coluna -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <!-- código que copiamos da documentação de Cards do bootstrap -->
+                <div class="card my-3">
+                    <img src="./images/cards/Content creation_Isometric.svg" class="card-img-top" alt="imagem base">
+                    <div class="card-body">
+                        <h5 class="card-title">UX / UI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-danger">Clique e conheça</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim 5a. coluna -->
+
+            <!-- 6a. coluna -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <!-- código que copiamos da documentação de Cards do bootstrap -->
+                <div class="card my-3">
+                    <img src="./images/cards/Content creation_Isometric.svg" class="card-img-top" alt="imagem base">
+                    <div class="card-body">
+                        <h5 class="card-title">UX / UI</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-outline-danger">Clique e conheça</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fim 6a. coluna -->
+
+        </div>
+        <!-- fim linha do grid -->
+
+    </div>
+    <!-- fim conteúdo principal -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

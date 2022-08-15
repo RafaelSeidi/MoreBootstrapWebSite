@@ -1,0 +1,11 @@
+.text-purple { 
+    color: #83498C; 
+}
+
+.line {
+    width: 300px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #83498C;
+    margin: 7px auto;
+}
